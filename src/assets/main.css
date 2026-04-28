@@ -1,0 +1,97 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* 🌞 Light Mode */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --subtext: #37383a;
+  --card: #dae0e7;
+  --border: #e5e7eb;
+  --primary: #111827;
+  --icon: linear-gradient(135deg, #c9eeff 0%, #a8e6f7 100%);
+}
+
+/* 🌙 Dark Mode */
+.dark {
+  --bg: #0c0f14;
+  --text: #ffffff;
+  --subtext: #a4aab0;
+  --card: #0f172a;
+  --border: #1e293b;
+  --primary: #f1f5f9;
+  --icon: linear-gradient(135deg, #888e90 0%, #c9cfd1 100%);
+}
+
+/* ใช้กับทั้งเว็บ */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth transition ทั้งเว็บ */
+* {
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px; /* ลดขนาดตัวอักษรบนมือถือ */
+    line-height: 1.2;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column; /* เรียงปุ่มเป็นแนวตั้งบนมือถือ */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 80%; /* ให้ปุ่มกว้างขึ้นบนมือถือ */
+    margin: 0;
+  }
+}
