@@ -54,7 +54,8 @@
 }
 
 .about .right {
-  max-width: 680px;
+  width: 70%;
+  max-width: 800px;
   margin-left: auto;
 }
 
@@ -94,7 +95,7 @@
 
 .about h1 {
   margin: 15px 0 16px 0;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -1px;

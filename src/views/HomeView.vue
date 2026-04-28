@@ -17,9 +17,9 @@ import WorkSection from '@/components/WorkSection.vue'
         <p class="p">
           A 4th-year Software Engineering student from the University of Phayao, currently
           developing skills as a Full Stack Developer. I have experience in both frontend and
-          backend development, including building web applications, designing APIs, and working with
-          modern frameworks and databases. I am also familiar with system deployment processes and
-          have hands-on experience with tools such as Docker, Kubernetes, and CI/CD, which help me
+          backend development, including building web applications and working with modern
+          frameworks and databases. I am also familiar with system deployment processes and have
+          hands-on experience with tools such as Docker, Kubernetes, and CI/CD, which help me
           understand the full lifecycle of application development from coding to production. I am
           currently seeking an internship opportunity from May to September to further enhance my
           practical skills and gain real-world experience in full stack development.
@@ -45,7 +45,7 @@ import WorkSection from '@/components/WorkSection.vue'
 
 <style scoped>
 .container {
-  width: 100%;
+  width: 70%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 100px 20px 50px;
@@ -74,7 +74,7 @@ import WorkSection from '@/components/WorkSection.vue'
 }
 
 .hero-text .p {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 /* RIGHT */
@@ -152,7 +152,24 @@ import WorkSection from '@/components/WorkSection.vue'
   font-size: 18px;
   line-height: 1.8;
   color: var(--subtext);
-  max-width: 600px;
+  text-align: left;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 14px;
+  }
 }
 
 .hero h1 {
